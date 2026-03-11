@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background-color: rgb(62, 122, 100);
+    background-color: #3e7a64;
 }
 .navbar{
     position: absolute;
@@ -58,6 +58,7 @@ h2{
     padding: 2% 0% 0% 0%;
 }
 #create-blog-btn{
+    border: 1px solid rgb(72, 72, 72);
     color: rgb(45, 26, 2);
     border-radius: 10px;
     text-decoration: none;
@@ -150,19 +151,21 @@ h2{
         text-shadow: 2px 2px 10px rgb(201, 235, 91);
         font-family:Verdana, Geneva, Tahoma, sans-serif;
         color: rgb(235, 135, 13);
-        font-size: 2.4rem;
+        font-size: 1.7rem;
         justify-content: center;
-        padding: 10% 10% 0% 10%;
+        padding: 10% 10% 5% 25%;
     }
     .section-A > p{
         text-shadow: 2px 2px 10px pink;
         font-family:monospace;
         color: rgb(237, 152, 49);
-        font-size: 1.4rem;
+        font-size: 1rem;
+        font-weight: 600;
         justify-content: center;  
-        padding: 2% 0% 0% 0%;
+        padding: 0% 10% 10% 25%;
     }
     #create-blog-btn{
+        border: 1px solid rgb(72, 72, 72);
         color: rgb(45, 26, 2);
         border-radius: 10px;
         text-decoration: none;
@@ -181,7 +184,97 @@ h2{
         flex-direction: column;
     }
     .section-B > div{
-        width: 60%;
+        width: 45%;
+        padding: 4%;
+
+    }
+    .section-B > div > h1{
+        color: bisque;
+        text-shadow: 2px 2px 5px rgb(162, 231, 72);
+        font-size: 1.8rem;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .section-B > div > p{
+        font-size: 1.1rem;
+        font-family: monospace;
+        font-weight: 800;
+        color: rgb(70, 67, 64);
+    }
+}
+@media screen and (max-width:660px){
+        .navbar{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:0px;
+    }
+    .logo > img{
+        width: 100px;
+    }
+    h2{
+        margin-left: 5px;
+        padding: 10px;
+        font-family:monospace;
+        font-size: 1.3rem;
+        color: rgb(26, 26, 26);
+    }
+    .nav-link{
+        margin: 5px;
+        padding: 5px;
+        text-decoration: none;
+        font-family: Arial;
+        color:rgb(60, 60, 60);
+        font-weight: 600;
+        font-size: 1rem;
+    }
+    .section-A{
+        background-image: url("../img/section-A.png");
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 15%;
+    }
+    .section-A > h1{
+        text-shadow: 2px 2px 10px rgb(201, 235, 91);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color: rgb(235, 135, 13);
+        font-size: 2rem;
+        justify-content: center;
+        padding: 10% 10% 5% 25%;
+    }
+    .section-A > p{
+        text-shadow: 2px 2px 10px pink;
+        font-family:monospace;
+        color: rgb(237, 152, 49);
+        font-size: 1rem;
+        font-weight: 600;
+        justify-content: center;  
+        padding: 0% 10% 10% 25%;
+    }
+    #create-blog-btn{
+        border: 1px solid rgb(72, 72, 72);
+        color: rgb(45, 26, 2);
+        border-radius: 10px;
+        text-decoration: none;
+        font-family:arial;
+        background-color: rgb(238, 238, 65);
+        font-size: 1.2rem;
+        align-items: center;
+        width:150px;
+        padding: 4%;
+        margin: 8%;
+    }
+    .section-B{
+        background-image: url("../img/section-B.png");
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+    }
+    .section-B > div{
+        width: 48%;
         padding: 4%;
 
     }
