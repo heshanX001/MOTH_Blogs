@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #3e7a64;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-wrapper {
+  margin-top: 10%;
+  width: 100%;
+  padding: 20px;
+}
+
+.signup-card {
+  max-width: 420px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 35px 30px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  color: #fff;
+}
+
+.signup-card h2 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+}
+
+.signup-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.signup-card input::placeholder {
+  color: #666;
+}
+
+.signup-card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 120, 160, 0.45);
+}
+
+.login-text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-text a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.login-text a:hover {
+  opacity: 0.85;
+}
+.signup-card select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.signup-card select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .input-group {
+    flex-direction: column;
+  }
+
+  .signup-card {
+    padding: 30px 22px;
+  }
+}
